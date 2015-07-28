@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "alexhao.codeheu"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+       encoding "UTF-8"
+   }
+
+//    tasks.withType(Compile) {
+//        options.encoding = "UTF-8"
+//    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:support-v4:21.0.3'
+    compile files('src/main/java/alexhao/codeheu/Lib/volley.jar')
+    compile files('src/main/java/alexhao/codeheu/Lib/jsoup-1.7.2.jar')
+    compile files('src/main/java/alexhao/codeheu/Lib/universal-image-loader-1.9.0.jar')
+    compile project(':XListView')
+}

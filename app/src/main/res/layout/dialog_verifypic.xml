@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@color/blue4"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/img_verify"
+                android:src="@drawable/morenpic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+            <ProgressBar
+                android:id="@+id/pb_loadverify"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv_changeVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="看不清 换一个"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/wordcolor_original"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/blue4"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/edt_verifynum"
+            android:src="@drawable/morenpic"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/roundedit"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:id="@+id/btn_verifyok"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:text="O K"
+            android:background="@color/blue1"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

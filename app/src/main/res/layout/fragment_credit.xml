@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <include
+        layout="@layout/top">
+    </include>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/blue2"
+            android:layout_below="@+id/lay_mainscore"
+            android:id="@+id/lay_tsscore">
+            <TextView
+                android:id="@+id/tv_ts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="通识选修课："
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                />
+            <LinearLayout
+                android:id="@+id/lay_ts_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/tv_ts"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总  分:"
+                    android:textSize="25sp"
+                    android:textColor="#003300"
+                    android:layout_weight="3"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9分"
+                    android:textSize="30sp"
+                    android:textColor="#003300"
+
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay_ts_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/lay_ts_total"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A-D类:"
+                    android:textSize="25sp"
+                    android:textColor="#003300"
+                    android:layout_weight="3"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5分"
+                    android:textSize="30sp"
+                    android:textColor="#003300"
+
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay_ts_ef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/lay_ts_ad"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E- F类:"
+                    android:textSize="25sp"
+                    android:textColor="#003300"
+                    android:layout_weight="3"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4分"
+                    android:textSize="30sp"
+                    android:textColor="#003300"
+
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/blue2"
+            android:id="@+id/lay_mainscore">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="专业选修课："
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="50sp"
+                android:text="9.5分"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
